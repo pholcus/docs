@@ -23,7 +23,7 @@ Pholcus（幽灵蛛）是一款纯Go语言编写的高并发、分布式、重�
 
  6. 服务器/客户端模式采用teleport高并发socketAPI框架，全双工长连接通信，内部数据传输格式为JSON；
  
- 7. 对采集规则进行了精心设计，规则灵活简单、高度封装，用于通用方法集与大量Demo，让你轻松添加规则；
+ 7. 对采集规则进行了精心设计，支持静态编译与动态JS两种规则，灵活简单且有大量Demo，写规则就是这么轻松；
  
  8. 支持横纵向两种抓取模式，并且支持任务暂停、取消等操作。
 
@@ -32,21 +32,21 @@ Pholcus（幽灵蛛）是一款纯Go语言编写的高并发、分布式、重�
 #### 第三方依赖包
 
 ```
-go get "github.com/henrylee2cn/surfer"
-go get "github.com/henrylee2cn/teleport"
-go get "github.com/PuerkitoBio/goquery"
-go get "github.com/bitly/go-simplejson"
-go get "github.com/henrylee2cn/mahonia"
-go get "github.com/andybalholm/cascadia"
-go get "github.com/lxn/walk"
-go get "github.com/lxn/win"
-go get "github.com/tealeg/xlsx"
-go get "github.com/go-sql-driver/mysql"
-go get "gopkg.in/mgo.v2"
+go get github.com/pholcus/spider_lib
+go get github.com/henrylee2cn/teleport
+go get github.com/PuerkitoBio/goquery
+go get github.com/robertkrimen/otto
+go get github.com/andybalholm/cascadia
+go get github.com/lxn/walk
+go get github.com/lxn/win
+go get github.com/go-sql-driver/mysql
+go get github.com/jteeuwen/go-bindata/...
+go get github.com/elazarl/go-bindata-assetfs/...
+go get gopkg.in/mgo.v2
 <以下需翻墙下载>
-go get "golang.org/x/net/html"
-go get "golang.org/x/text/encoding"
-go get "golang.org/x/text/transform"
+go get golang.org/x/net/html
+go get golang.org/x/text/encoding
+go get golang.org/x/text/transform
 ```
 > *<font size="2">（在此感谢以上开源项目的支持！）</font>*
 
